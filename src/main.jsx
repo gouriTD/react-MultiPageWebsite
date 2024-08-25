@@ -11,7 +11,7 @@ import { githubLoader } from './components/Github'
 // Steps: 1) call createBrowserRouter, inside that call createRoutesFromElements and then specify nested routes.
 const appRouter = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Root />}>
+      <Route path="/react-MultiPageWebsite/" element={<Root />}>
         <Route path="" element={<Home/>}/>
         <Route path="about" element={<About/>}/>
         <Route path="contact" element={<ContactUs/>}/>
@@ -20,7 +20,7 @@ const appRouter = createBrowserRouter(
           loader={githubLoader}
           element={<Github />}
         />
-        <Route path="/users/:myuser" element={<Users />}/>
+        <Route path="users/:myuser" element={<Users />}/>
     </Route>
     )
 );
