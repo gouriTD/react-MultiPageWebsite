@@ -16,7 +16,7 @@ const appRouter = createBrowserRouter(
         <Route path="about" element={<About/>}/>
         <Route path="contact" element={<ContactUs/>}/>
         <Route 
-          path="github" 
+          path="myGithubRepo" 
           loader={githubLoader}
           element={<Github />}
         />
